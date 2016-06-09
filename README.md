@@ -3,7 +3,7 @@
 This is my (Joe Straitiff) candidate homework solution derived from the example
 sinatra template provided.  The specification is included at [SPEC.md](./SPEC.md)
 
-## Quick Set-up:
+## Quick Set-up
 After the postgres is installed and the database is created:
 
 ``` bash
