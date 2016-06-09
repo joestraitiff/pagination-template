@@ -3,7 +3,8 @@
 This is my (Joe Straitiff) candidate homework solution derived from the example
 sinatra template provided.  The specification is included at [SPEC.md](./SPEC.md)
 
-Quick Set-up:
+## Quick Set-up:
+After the postgres is installed and the database is created:
 
 ``` bash
 git clone https://github.com/joestraitiff/pagination-template
@@ -32,3 +33,11 @@ createdb pagination-template # -O to specify owner if your system setup requires
 Also you will need to update the .env file in the project or set the environment
 variable for PAGINATION_DB for your system and specific database name before running
 tests or starting the app.
+
+## Curl testing
+
+It's also easy to test the app using curl to check the returned headers, e.g.:
+
+```bash
+curl -v -H "Range: name ]my-app-001..my-app-999; max=10, order=asc" localhost:5000
+```
